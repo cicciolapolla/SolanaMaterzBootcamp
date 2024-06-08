@@ -1,0 +1,29 @@
+{
+  "name": "solana-masterz-bootcamp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/cicciolapolla/SolanaMaterzBootcamp.git",
+  "author": "Francesco Lapolla <francesco.lapolla@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "keygen": "ts-node ./keygen.ts",
+    "airdrop": "ts-node ./airdrop.ts",
+    "transfer": "ts-node ./transfer.ts",
+    "createMint": "ts-node ./spl_init.ts",
+    "mintToken": "ts-node ./spl_mint.ts",
+    "transferToken": "ts-node ./spl_transfer.ts"
+  },
+  "dependencies": {
+    "@metaplex-foundation/mpl-token-metadata": "^3.2.1",
+    "@metaplex-foundation/umi-bundle-defaults": "^0.9.1",
+    "@metaplex-foundation/umi-uploader-irys": "^0.9.1",
+    "@solana/spl-token": "^0.4.6",
+    "@solana/web3.js": "^1.91.7",
+    "@types/node": "^20.12.7",
+    "bs58": "^5.0.0",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2"
+  }
+}
